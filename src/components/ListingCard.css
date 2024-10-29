@@ -1,0 +1,62 @@
+/* src/components/ListingCard.css */
+
+.listing-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  margin: 16px;
+  max-width: 300px; /* You can adjust the width as needed */
+  display: flex;
+  flex-direction: column;
+}
+
+.listing-card:hover {
+  transform: scale(1.02);
+}
+
+.listing-card-image {
+  width: 100%;
+  height: 200px; /* Fixed height for the image */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.listing-card-title {
+  font-size: 1.5em;
+  margin: 12px;
+}
+
+.listing-card-summary {
+  font-size: 0.9em;
+  margin: 0 12px 12px;
+  color: #555;
+}
+
+.listing-card-price {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0 12px 8px;
+  color: #007BFF; /* Change to your preferred color */
+}
+
+.listing-card-rating {
+  font-size: 0.9em;
+  margin: 0 12px 12px;
+  color: #777;
+}
+
+.listing-card-link {
+  background-color: #007BFF; /* Primary button color */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin: 0 12px 12px;
+  transition: background-color 0.3s;
+}
+
+.listing-card-link:hover {
+  background-color: #0056b3; /* Darken on hover */
+}
