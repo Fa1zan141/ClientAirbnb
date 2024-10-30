@@ -1,4 +1,4 @@
-// src/pages/BookingsPage.jsx
+
 import React, { useState } from 'react';
 import BookingForm from '../components/BookingForm'; 
 import './BookingsPage.css'; 

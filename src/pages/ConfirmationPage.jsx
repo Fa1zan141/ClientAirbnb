@@ -1,4 +1,4 @@
-// src/pages/BookingConfirmationPage.jsx
+
 import React from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import './ConfirmationPage.css'; 

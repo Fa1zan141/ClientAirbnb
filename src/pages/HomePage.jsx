@@ -1,4 +1,3 @@
-// src/pages/HomePage.jsx
 import React, { useState } from 'react';
 import ListingCard from '../components/ListingCard';
 import './HomePage.css';

@@ -1,4 +1,3 @@
-// src/components/BookingForm.jsx
 import React, { useState } from 'react';
 import './BookingForm.css';
 
