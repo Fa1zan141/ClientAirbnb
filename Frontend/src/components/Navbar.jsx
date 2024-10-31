@@ -4,7 +4,7 @@ import './Navbar.css';
 
 const Navbar = () => (
   <nav className="navbar">
-    <Link to="/home" className="navbar-brand">Airbnb</Link>
+    <Link to="/" className="navbar-brand">Airbnb</Link>
     <div className="navbar-links">
       <div id="btn">
       <Link to="/bookings">Make a Booking</Link>

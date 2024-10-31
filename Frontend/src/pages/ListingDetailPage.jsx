@@ -51,7 +51,35 @@ const ListingDetailPage = () => {
         return <div className="error">No listing found.</div>;
     }
 
-    const { name, summary, price, images, bedrooms, property_type, review_scores } = listing;
+    // Destructure additional fields from the listing
+    const {
+        name,
+        summary,
+        space,
+        description,
+        neighborhood_overview,
+        notes,
+        transit,
+        access,
+        interaction,
+        house_rules,
+        property_type,
+        room_type,
+        bed_type,
+        minimum_nights,
+        maximum_nights,
+        cancellation_policy,
+        last_scraped,
+        first_review,
+        last_review,
+        accommodates,
+        bedrooms,
+        beds,
+        images,
+        review_scores,
+        price
+    } = listing;
+
     const fallbackImage = "https://picsum.photos/600/400";
 
     return (
@@ -63,11 +91,28 @@ const ListingDetailPage = () => {
                 className="listing-detail-image" 
                 onError={(e) => e.target.src = fallbackImage} 
             />
-            <p className="listing-detail-summary">{summary || 'No summary available.'}</p>
-            <p className="listing-detail-price">Price: {price ? `$${price.$numberDecimal}/night` : "Price not available"}</p>
-            <p className="listing-detail-bedrooms">Bedrooms: {bedrooms !== undefined ? bedrooms : "Not specified"}</p>
-            <p className="listing-detail-property-type">Property Type: {property_type || 'Not specified'}</p>
-            <p className="listing-detail-reviews">⭐ {review_scores?.review_scores_rating ? `${review_scores.review_scores_rating} (based on reviews)` : "No reviews available"}</p>
+            <p className="listing-detail-summary"><strong>Summary:</strong> {summary || 'No summary available.'}</p>
+            <p className="listing-detail-price"><strong>Price:</strong> {price ? `$${price.$numberDecimal}/night` : "Price not available"}</p>
+            <p className="listing-detail-bedrooms"><strong>Bedrooms:</strong> {bedrooms !== undefined ? bedrooms : "Not specified"}</p>
+            <p className="listing-detail-accommodates"><strong>Accommodates:</strong> {accommodates !== undefined ? accommodates : "Not specified"}</p>
+            <p className="listing-detail-property-type"><strong>Property Type:</strong> {property_type || 'Not specified'}</p>
+            <p className="listing-detail-room-type"><strong>Room Type:</strong> {room_type || 'Not specified'}</p>
+            <p className="listing-detail-bed-type"><strong>Bed Type:</strong> {bed_type || 'Not specified'}</p>
+            <p className="listing-detail-minimum-nights"><strong>Minimum Nights:</strong> {minimum_nights || 'Not specified'}</p>
+            <p className="listing-detail-maximum-nights"><strong>Maximum Nights:</strong> {maximum_nights || 'Not specified'}</p>
+            <p className="listing-detail-cancellation-policy"><strong>Cancellation Policy:</strong> {cancellation_policy || 'Not specified'}</p>
+            <p className="listing-detail-space"><strong>Space:</strong> {space || 'No details available.'}</p>
+            <p className="listing-detail-description"><strong>Description:</strong> {description || 'No description available.'}</p>
+            <p className="listing-detail-neighborhood"><strong>Neighborhood Overview:</strong> {neighborhood_overview || 'No details available.'}</p>
+            <p className="listing-detail-notes"><strong>Notes:</strong> {notes || 'No notes available.'}</p>
+            <p className="listing-detail-transit"><strong>Transit:</strong> {transit || 'No transit details available.'}</p>
+            <p className="listing-detail-access"><strong>Access:</strong> {access || 'No access details available.'}</p>
+            <p className="listing-detail-interaction"><strong>Interaction:</strong> {interaction || 'No interaction details available.'}</p>
+            <p className="listing-detail-house-rules"><strong>House Rules:</strong> {house_rules || 'No house rules available.'}</p>
+            <p className="listing-detail-reviews"><strong>Reviews:</strong> ⭐ {review_scores?.review_scores_rating ? `${review_scores.review_scores_rating} (based on reviews)` : "No reviews available"}</p>
+            <p className="listing-detail-first-review"><strong>First Review:</strong> {first_review ? new Date(first_review).toLocaleDateString() : 'Not available'}</p>
+            <p className="listing-detail-last-review"><strong>Last Review:</strong> {last_review ? new Date(last_review).toLocaleDateString() : 'Not available'}</p>
+            <p className="listing-detail-last-scraped"><strong>Last Scraped:</strong> {last_scraped ? new Date(last_scraped).toLocaleDateString() : 'Not available'}</p>
         </div>
     );
 };

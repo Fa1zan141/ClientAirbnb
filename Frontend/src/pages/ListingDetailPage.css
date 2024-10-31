@@ -1,6 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+  }
 .listing-detail-page {
-    max-width: 800px;
-    margin: 0 auto;
+    width: 1080px;
+    margin: 20px auto;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
@@ -9,30 +18,15 @@
 
 .listing-detail-title {
     font-size: 2em;
-    color: #333;
+    color: #007bff; 
     margin-bottom: 15px;
 }
 
 .listing-detail-image {
     width: 100%;
-    height: auto;
+    height: 450px;
     border-radius: 8px;
     margin-bottom: 15px;
-}
-
-.listing-detail-summary {
-    font-size: 1.2em;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-.listing-detail-price,
-.listing-detail-bedrooms,
-.listing-detail-property-type,
-.listing-detail-reviews {
-    font-size: 1.1em;
-    color: #666;
-    margin-bottom: 5px;
 }
 
 .error {
@@ -45,4 +39,30 @@
     font-size: 1.5em;
     text-align: center;
     color: #007BFF;
+}
+
+.listing-detail-summary,
+.listing-detail-price,
+.listing-detail-bedrooms,
+.listing-detail-property-type,
+.listing-detail-reviews,
+.listing-detail-space,
+.listing-detail-description,
+.listing-detail-neighborhood,
+.listing-detail-notes,
+.listing-detail-transit,
+.listing-detail-access,
+.listing-detail-interaction,
+.listing-detail-house-rules,
+.listing-detail-first-review,
+.listing-detail-last-review,
+.listing-detail-last-scraped,
+.listing-detail-room_type {
+    margin-bottom: 30px;
+    font-size: 16px; 
+    color: #020202; 
+}
+strong {
+    color: #007bff; 
+    font-size: 22px; 
 }
