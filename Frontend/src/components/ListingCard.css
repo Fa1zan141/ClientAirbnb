@@ -48,7 +48,7 @@
   font-size: 1.1em; 
   font-weight: bold;
   margin: 0 12px 8px;
-  color: #007BFF;
+  color: #FF385C;
   white-space: nowrap; 
   overflow: hidden;
   text-overflow: ellipsis;
@@ -64,7 +64,7 @@
 }
 
 .listing-card-link {
-  background-color: #007BFF;
+  background-color: #FF385C;
   color: white;
   text-align: center;
   padding: 10px;
@@ -76,5 +76,5 @@
 }
 
 .listing-card-link:hover {
-  background-color: #0056b3;
+  background-color: #FF385C;
 }

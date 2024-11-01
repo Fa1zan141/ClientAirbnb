@@ -332,7 +332,8 @@ const HomePage = () => {
   return (
     <div className="container">
       <section className="form-section">
-        <h2>Find Your Perfect Stay</h2>
+      <h2>Discover Your Desire Destination</h2>
+        <h2>Where are you going?</h2>
         <form onSubmit={handleSearch}>
           <div className="form-group">
             <label htmlFor="location">Location *</label>

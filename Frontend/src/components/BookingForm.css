@@ -47,14 +47,14 @@ html,body {
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #007bff; 
+  border-color: #FF385C; 
   outline: none; 
 }
 
 .submit-btn {
   width: 100%; 
   padding: 0.75rem;
-  background-color: #007bff; 
+  background-color: #FF385C; 
   color: white; 
   font-size: 1rem; 
   border: none; 
@@ -64,7 +64,7 @@ html,body {
 }
 
 .submit-btn:hover {
-  background-color: #0056b3; 
+  background-color: #FF385C; 
 }
 
 @media (max-width: 600px) {

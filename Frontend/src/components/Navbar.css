@@ -13,13 +13,13 @@
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #1e90ff;
+  color: #FF385C;
   text-decoration: none;
 }
 .navbar-brand:hover{
   font-size: 1.5rem;
   font-weight: bold;
-  color: #0a529b;
+  color: #FF385C;
   text-decoration: none;
 }
 
@@ -40,7 +40,7 @@
   width: 180px;
   height: 40px;
   border-radius: 20px;
-  background-color: blue;
+  background-color: #FF385C;
   padding: 10px;
   border: none; 
   cursor: pointer; 
@@ -48,4 +48,4 @@
 }
 
 #btn:hover {
-  background-color: darkblue; }
+  background-color: #FF385C; }

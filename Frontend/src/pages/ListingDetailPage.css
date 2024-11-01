@@ -18,7 +18,7 @@
 
 .listing-detail-title {
     font-size: 2em;
-    color: #007bff; 
+    color: #FF385C; 
     margin-bottom: 15px;
 }
 
@@ -38,7 +38,7 @@
 .loading {
     font-size: 1.5em;
     text-align: center;
-    color: #007BFF;
+    color: #FF385C;
 }
 
 .listing-detail-summary,
@@ -63,6 +63,6 @@
     color: #020202; 
 }
 strong {
-    color: #007bff; 
+    color: #FF385C; 
     font-size: 22px; 
 }

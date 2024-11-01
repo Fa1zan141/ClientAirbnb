@@ -8,7 +8,7 @@ html,body {
   width: 100%;
   position: relative;
   font-family: Arial, sans-serif;
-  background-color: #1661ad;
+  background-color: #FF385C;
 }
 .confirmation {
   max-width: 600px;
@@ -23,7 +23,7 @@ html,body {
 
 h2 {
   text-align: center;
-  color: #007bff;
+  color: #FF385C;
 }
 
 .booking-details {
